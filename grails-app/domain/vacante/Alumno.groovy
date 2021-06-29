@@ -14,7 +14,7 @@ class Alumno {
         nombre blank:false
         correo email:true, blank:false, unique:true
         semestre max:1
-        matricula matches:"[0-9]{9}"
+        matricula matches:"[0-9]{9}", unique: true
         nivelAcademico null:false, blank:false
     }
 }
